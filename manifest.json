@@ -1,0 +1,26 @@
+{
+  "name": "Betreuung – Wer ist noch da?",
+  "short_name": "Betreuung",
+  "description": "Übersicht der betreuungspflichtigen Schülerinnen und Schüler: abgeholt, krank, noch da.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#1d6b5c",
+  "theme_color": "#1d6b5c",
+  "lang": "de",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

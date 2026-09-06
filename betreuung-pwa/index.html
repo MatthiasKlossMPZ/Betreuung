@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1d6b5c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="description" content="Wer ist noch da? Betreuungspflichtige Schülerinnen und Schüler austragen.">
+  <title>Betreuung – Wer ist noch da?</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-row">
+      <div class="brand">
+        <img class="logo" src="icons/logo-header.png" alt="Betreuung">
+        <div>
+          <h1>Betreuung</h1>
+          <p id="school-sub">Wer ist noch da?</p>
+        </div>
+      </div>
+      <div class="date-nav">
+        <button class="icon-btn" id="prev-day" aria-label="Vorheriger Tag">‹</button>
+        <div class="date-label" id="date-label" title="Auf heute springen"></div>
+        <button class="icon-btn" id="next-day" aria-label="Nächster Tag">›</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="view-today" data-view="today"></section>
+    <section id="view-week" data-view="week" class="hidden"></section>
+    <section id="view-students" data-view="students" class="hidden"></section>
+    <section id="view-settings" data-view="settings" class="hidden"></section>
+  </main>
+
+  <nav class="nav">
+    <button data-nav="today" class="active"><span class="ico">●</span>Heute</button>
+    <button data-nav="week"><span class="ico">▦</span>Woche</button>
+    <button data-nav="students"><span class="ico">☰</span>Schüler</button>
+    <button data-nav="settings"><span class="ico">⚙</span>Mehr</button>
+  </nav>
+
+  <div id="modal" class="modal-bg hidden"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>
